@@ -9,6 +9,8 @@ NIC = Network Interface Card : stored MAC address
 ## Layer 2 Data
 Ethernet, **MAC address**, LAN, switch
 
+MAC address : “Who are we sending this to?”
+
 **Ethernet Frame**
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -27,11 +29,17 @@ Ethernet, **MAC address**, LAN, switch
 MAC address discovery
 IPv4 : ARP + broadcast
 IPv6 : NDP + ICMPv6
+
+An Ethernet frame can only be delivered within the local network (LAN).
+Same subnet -> Directly deliver using an Ethernet frame.
+Different subnet -> Send to the default gateway for routing.
 ```
 
 
 ## Layer 3 Transport
 **IP address**, router
+
+IP address : “Where should we send it?”
 
 **IPv4 Packet**
 ```
@@ -83,10 +91,7 @@ IPv4 Packet
 - fragment offset: which part of segment (sequence)
 - TTL : decrease hop by hop (when pass through each router)
   when TTL 1 -> 0 : router -> traceroute
-- protocal:  6 -> TCP
-            17 -> UDP
-             1 -> ICPM
-
+- protocal:  TCP = 6, UDP = 17 , ICPM = 1
 
 ---
 
@@ -113,3 +118,7 @@ IPv4 Packet
 │                          Variable                            │
 └──────────────────────────────────────────────────────────────┘
 ```
+
+update packet
+
+
