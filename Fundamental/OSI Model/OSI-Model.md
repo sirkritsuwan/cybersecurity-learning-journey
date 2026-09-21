@@ -87,7 +87,6 @@ IPv4 Packet
             17 -> UDP
              1 -> ICPM
 
-...
 
 ---
 
