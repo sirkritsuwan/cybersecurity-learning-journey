@@ -9,12 +9,6 @@ NIC = Network Interface Card : stored MAC address
 Ethernet, MAC address, LAN
 
 **Ethernet Frame**
-```mermaid
-flowchart TD
-  HTTP --> TCP
-  TCP --> IP
-  IP --> Ethernet
-```
-
+| Preamble | SFD | Destination MAC | Source MAC | EtherType | Payload | FCS |
 
 
