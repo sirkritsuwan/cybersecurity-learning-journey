@@ -1,5 +1,6 @@
 # ROADMAP
 
+```
 01. Operating System Fundamentals
 │
 ├── OS
@@ -13,7 +14,7 @@
 ├── Files
 └── Drivers
 
----
+========================================================
 
 02. Windows Architecture
 │
@@ -35,7 +36,7 @@
 08. Windows Filesystem Architecture
 09. Windows Registry Architecture
 
----
+========================================================
 
 10. Linux Architecture
 │
@@ -60,3 +61,8 @@
 20. OS Concepts for Cybersecurity
 21. Practical Enumeration
 22. Security Labs
+
+```
+
+
+
