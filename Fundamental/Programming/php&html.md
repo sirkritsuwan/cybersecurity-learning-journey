@@ -27,5 +27,5 @@
   echo "Account {$account} <br>";
   echo "Account Name : {$name}";
   echo "Balance \${$balance}";       // use '\' to separate confusion of '$'
-  echo "active status {$active}";    // true = 1, false = display nothing
+  echo "Active Status {$active}";    // true = 1, false = display nothing
   ```
