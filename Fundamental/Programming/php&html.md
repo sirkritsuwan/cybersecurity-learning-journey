@@ -24,8 +24,16 @@
   $balance = 2336.33
   $active = true
 
+  echo $name;
   echo "Account {$account} <br>";
-  echo "Account Name : {$name}";
   echo "Balance \${$balance}";       // use '\' to separate confusion of '$'
   echo "Active Status {$active}";    // true = 1, false = display nothing
   ```
+
+  - operator
+    : just like C and others languadges
+
+  - special variable
+    ```
+    $_GET and $_POST
+    ```
