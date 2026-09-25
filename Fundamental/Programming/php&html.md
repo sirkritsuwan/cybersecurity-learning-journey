@@ -1,0 +1,31 @@
+
+// short cut  [ ! + tap = html form ]
+
+- open and close phase
+```
+<?php    //start
+
+?>       //close
+```
+
+- variable
+`$' : can use with every data type
+
+- display
+  ```
+  echo "abc <br>";
+
+  // can use "" or ''
+  //<br> : break / next line
+
+  ex.
+  $name = "Alice"
+  $account = "123-456"
+  $balance = 2336.33
+  $active = true
+
+  echo "Account {$account} <br>";
+  echo "Account Name : {$name}";
+  echo "Balance \${$balance}";       // use '\' to separate confusion of '$'
+  echo "active status {$active}";    // true = 1, false = display nothing
+  ```
