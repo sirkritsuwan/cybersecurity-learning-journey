@@ -38,13 +38,13 @@
   - special variable
     : collect data from html then send to php
     ```
-    $_GET  // not secure
+    $_GET  // not secure ***
               char limit
               for search page
               GET requests can be crash
     $_POST // more secure
               no data limit
-              for submitting credentials
+              for submitting credentials ***
               requests are not crash
     ```
 
@@ -59,7 +59,7 @@
             <title>Document</title>
         </head>
         <body>
-            <form action="index.php" method="get">
+            <form action="index.php" method="get">        // <-- **** define GET method use action from "index.php"
                 <leble>username: </leble><br>
                 <input type="text" name="username"><br>
                 <leble>password: </leble><br>
@@ -70,8 +70,8 @@
         </html>
         
         <?php
-            echo "{$_GET["username"]} <br>";
-            echo $_GET["password"] . "<br>";
+            echo "{$_GET["username"]} <br>";        // <-- **** GET variable
+            echo $_GET["password"] . "<br>";        // and different way to use "<br>"
         ?>
       ```
       
@@ -88,7 +88,7 @@
             <title>Document</title>
         </head>
         <body>
-            <form action="index.php" method="post">
+            <form action="index.php" method="post">        // <-- **** define POST method use action from "index.php"
                 <leble>username: </leble><br>
                 <input type="text" name="username"><br>
                 <leble>password: </leble><br>
@@ -99,7 +99,7 @@
         </html>
         
         <?php
-            echo "{$_POST["username"]} <br>";
+            echo "{$_POST["username"]} <br>";        // <-- **** POST variable
             echo $_POST["password"] . "<br>";
         ?>
       ```
